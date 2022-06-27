@@ -28,7 +28,6 @@ fluidPage(
     mainPanel(
       tags$p(HTML("This is a preliminary tool for <a href='https://psych-ds.github.io/'>Psych-DS</a>, created for the <a href='https://docs.google.com/document/d/1K7WFndgkXZBqDuWWqBU0ZakgbS_NErl0zVyMApCwDjk/edit#'>2022 SIPS hackathon</a>. It is a super preliminary prototype! Known limitations include: 
                   <ul>
-                  <li>Not tested on Windows/Linux machines</li>
                   <li>Not tested on datasets with large or numerous data files</li>
                   <li>No support for sidecar JSON files</li>
                   <li>No support for rich variableMeasured values - names/strings only</li>
