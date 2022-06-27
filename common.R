@@ -31,9 +31,7 @@ get_pds_with_csv <- function(pds_dir) {
                            col_names = TRUE, 
                            n_max = 1,
                            delim = ",",
-                           progress = FALSE,
-                           show_col_types = FALSE,
-                           name_repair = "minimal")
+                           progress = FALSE)
     
     header_problems = if_else(nrow(problems(this_header)) == 0,
                             "\nSUCCESS: Parsed header (first row)",
@@ -44,9 +42,7 @@ get_pds_with_csv <- function(pds_dir) {
                          col_names = FALSE, 
                          skip = 1,
                          n_max = 1,
-                         delim = ",",
-                         progress = FALSE,
-                         show_col_types = FALSE)
+                         delim = ",")
     
     body_problems = if_else(nrow(problems(this_body)) == 0,
                             "\nSUCCESS: Parsed body (rows 2+) as table",
