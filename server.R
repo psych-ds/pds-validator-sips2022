@@ -155,9 +155,7 @@ shinyServer(function(input, output, session) {
                                        col_names = TRUE, 
                                        n_max = 10,
                                        delim = ",",
-                                       progress = FALSE,
-                                       show_col_types = FALSE,
-                                       name_repair = "minimal")
+                                       progress = FALSE)
           
           print(should_be_valid)
           cat("\n\n")
